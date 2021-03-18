@@ -1,3 +1,4 @@
+import {ChakraProvider} from "@chakra-ui/react";
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -7,7 +8,9 @@ import "./theme.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HomeScreen />
+    <ChakraProvider>
+      <HomeScreen />
+    </ChakraProvider>
   </React.StrictMode>,
   document.getElementById("root"),
 );
