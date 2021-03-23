@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
-    "dev": "nodemon ./src/app.ts"
+    "dev": "nodemon ./src/app.ts",
+    "start": "node build/app.js",
+    "build": "tsc",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "@types/node": "^14.11.2",
