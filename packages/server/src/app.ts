@@ -11,7 +11,7 @@ const updateStatus = () => {
   server.emit("message", {votes, products});
 };
 server.on("connection", (socket) => {
-  socket.emit("ping", "pong");
+  socket.emit("ping", "pung");
   updateStatus();
   socket.on("reset", () => {
     votes = [];
